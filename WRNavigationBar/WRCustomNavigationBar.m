@@ -99,7 +99,7 @@
 
 // TODO:这边结合 WRCellView 会不会更好呢？
 -(void)updateFrame {
-    NSInteger top = ([WRCustomNavigationBar isIphoneX]) ? 44 : 20;
+    NSInteger top = CGRectGetHeight([UIApplication sharedApplication].statusBarFrame);
     NSInteger margin = 0;
     NSInteger buttonHeight = 44;
     NSInteger buttonWidth = 44;
